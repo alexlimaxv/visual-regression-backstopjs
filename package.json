@@ -1,0 +1,19 @@
+{
+  "name": "poc-backstop",
+  "version": "1.0.0",
+  "description": "projeto de estudo para automação de regressão visual",
+  "scripts": {
+    "backstop:approve": "backstop approve --config=test/mainConfig.js",
+    "backstop:reference": "backstop reference --config=test/mainConfig.js",
+    "backstop:test": "npm run clean:bitmaps_test && backstop test --config=test/mainConfig.js",
+    "clean:bitmaps_test": "rm -rf test/backstop_data/bitmaps_test",
+    "test": "npm run backstop:test",
+    "test:docker": "npm run clean:bitmaps_test && backstop test --config=test/mainConfig.js --docker"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "backstopjs": "^6.1.4"
+  }
+}
