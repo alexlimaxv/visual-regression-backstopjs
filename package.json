@@ -1,7 +1,7 @@
 {
-  "name": "poc-backstop",
+  "name": "visual-regression-backstopjs",
   "version": "1.0.0",
-  "description": "projeto de estudo para automação de regressão visual",
+  "description": "project of visual regression testing",
   "scripts": {
     "backstop:approve": "backstop approve --config=test/mainConfig.js",
     "backstop:reference": "backstop reference --config=test/mainConfig.js",
